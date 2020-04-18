@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r}
+library(readxl)
+
+Salkku<-read_excel("C:/Users/35850/Documents/MIG/MIGSalkku.xlsx")
+paletti<-c("#284177","#006BBD", "#83CEEC","#EDE8E4","#C2AFA8")
+
+Allokaatio<-round(Salkku$`Arvo (€)`/sum(Salkku$`Arvo (€)`)*100, digits = 3)
+
+Hajautus<-paste(Allokaatio,"%")
+osuusp<-c(Salkku$`Arvo (€)`/sum(Salkku$`Arvo (€)`))
+tuottop<-c(Salkku$`Tuotto %`*100)
+
+par(mai=c(0.5,0.5,0.5,0.5))
+par(mfrow=c(1,2))
+
+
+pie(osuusp, Hajautus, main = "Salkun Allokaatio", clockwise = TRUE, col = paletti)
+legend("bottomright",Salkku$Yritys,cex = 0.6, fill = paletti)
+
+barplot(ylim = c(-40,30), col = paletti, sort(tuottop ,decreasing = TRUE))
+legend("bottomleft",Salkku$Yritys,cex = 0.6, fill = paletti)
+```
+
+## R Markdown
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
