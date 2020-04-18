@@ -1,9 +1,9 @@
 ---
-title: "Untitled"
+title: "Salkku"
 output: html_document
 ---
 
-```{r}
+```{r echo=FALSE}
 library(readxl)
 
 Salkku<-read_excel("C:/Users/35850/Documents/MIG/MIGSalkku.xlsx")
@@ -26,20 +26,14 @@ barplot(ylim = c(-40,30), col = paletti, sort(tuottop ,decreasing = TRUE))
 legend("bottomleft",Salkku$Yritys,cex = 0.6, fill = paletti)
 ```
 
-## R Markdown
+## Osingot
+
+###Tulevat Osingot
+Fortum 180,40€ Irtoamispäivä 20.4.2020 "\n"
+Kamux 90,85€ Irtoamispäivä 22.4.2020
+
+###Maksetut Osingot
+CapMan 125,32€ Maksupäivä 20.3.2020
 
 
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

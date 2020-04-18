@@ -11,7 +11,7 @@
 
 
 
-<title>Untitled</title>
+<title>Salkku</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -267,15 +267,18 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">My Website</a>
+      <a class="navbar-brand" href="index.html">Merca Invest Group</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">Salkku</a>
 </li>
 <li>
-  <a href="about.html">About</a>
+  <a href="about.html">Info</a>
+</li>
+<li>
+  <a href="contacts.html">Yhteystiedot</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -289,48 +292,22 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Untitled</h1>
+<h1 class="title toc-ignore">Salkku</h1>
 
 </div>
 
 
-<pre class="r"><code>library(readxl)
-
-Salkku&lt;-read_excel(&quot;C:/Users/35850/Documents/MIG/MIGSalkku.xlsx&quot;)
-paletti&lt;-c(&quot;#284177&quot;,&quot;#006BBD&quot;, &quot;#83CEEC&quot;,&quot;#EDE8E4&quot;,&quot;#C2AFA8&quot;)
-
-Allokaatio&lt;-round(Salkku$`Arvo (€)`/sum(Salkku$`Arvo (€)`)*100, digits = 3)
-
-Hajautus&lt;-paste(Allokaatio,&quot;%&quot;)
-osuusp&lt;-c(Salkku$`Arvo (€)`/sum(Salkku$`Arvo (€)`))
-tuottop&lt;-c(Salkku$`Tuotto %`*100)
-
-par(mai=c(0.5,0.5,0.5,0.5))
-par(mfrow=c(1,2))
-
-
-pie(osuusp, Hajautus, main = &quot;Salkun Allokaatio&quot;, clockwise = TRUE, col = paletti)
-legend(&quot;bottomright&quot;,Salkku$Yritys,cex = 0.6, fill = paletti)
-
-barplot(ylim = c(-40,30), col = paletti, sort(tuottop ,decreasing = TRUE))
-legend(&quot;bottomleft&quot;,Salkku$Yritys,cex = 0.6, fill = paletti)</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<div id="osingot" class="section level2">
+<h2>Osingot</h2>
+<div id="tulevat-osingot" class="section level3">
+<h3>Tulevat Osingot</h3>
+<p>Fortum 180,40€ Irtoamispäivä 20.4.2020 “” Kamux 90,85€ Irtoamispäivä 22.4.2020</p>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="maksetut-osingot" class="section level3">
+<h3>Maksetut Osingot</h3>
+<p>CapMan 125,32€ Maksupäivä 20.3.2020</p>
+</div>
 </div>
 
 

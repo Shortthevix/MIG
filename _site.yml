@@ -1,9 +1,20 @@
-name: "my-website"
+name: "Merca Invest Group"
 navbar:
-  title: "My Website"
+  title: "Merca Invest Group"
   left:
-    - text: "Home"
+    - text: "Salkku"
       href: index.html
-    - text: "About"
+    - text: "Info"
       href: about.html
-      
+    - text: "Yhteystiedot"
+      href: contacts.html
+ 
+      output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
+    output_dir: "."
+    
