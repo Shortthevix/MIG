@@ -5,12 +5,12 @@ output: html_document
 
 ##Hallitus
 
-Puheenjohtaja: Mysteeri Vipumies \n
-Varapuheenjohtaja: "Ipe" \n
-Jäsen: Ari \n
-Jäsen: Batman bin S \n
-Jäsen: Super T \n
-Jäsen: Voitulla Kokeilee \n
+Puheenjohtaja: Mysteeri Vipumies \
+&nbsp: Varapuheenjohtaja: "Ipe" \
+Jäsen: Ari \
+Jäsen: Batman bin S \
+Jäsen: Super T \
+Jäsen: Voitulla Kokeilee \
 
 
 Aes ku tekköö

@@ -3,7 +3,7 @@ title: "Arvot"
 output: html_document
 ---
 
-Merca Invest Group toteuttaa seuraavia arvoaja "\n"
-1. Greener is meaner "\n"
-2. Rock your day "\n"
+Merca Invest Group toteuttaa seuraavia arvoja \
+1. Greener is meaner \
+2. Rock your day \
 
