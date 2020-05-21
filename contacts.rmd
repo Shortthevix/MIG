@@ -6,7 +6,7 @@ output: html_document
 ##Hallitus
 
 Puheenjohtaja: Mysteeri Vipumies \
-&nbsp: Varapuheenjohtaja: "Ipe" \
+Varapuheenjohtaja: "Ipe" \
 Jäsen: Ari \
 Jäsen: Batman bin S \
 Jäsen: Super T \
